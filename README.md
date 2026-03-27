@@ -1,5 +1,3 @@
-# 🧠 Aicent Stack: The Sovereign AI Nervous System
-
  ⚪ **AICENT**  💎 **RTTP**  🔴 **RPKI**  🟢 **ZCMK**  🟡 **GTIOT** 
 <p align="left">
   <code> 🛠️ Build: Passing </code> &nbsp; 

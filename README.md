@@ -9,12 +9,7 @@
 </p> 
 
 # 🩸 ZCMK: The Value-Carrying Circulatory System
-
-<p align="left">
-  <img src="https://raw.githubusercontent.com" width="100%">
-</p>
-
-> **"AI needs blood, not bank taxes."** 🧠⚡️🛡️
+![ZCMK](https://github.com/user-attachments/assets/9135b15b-22da-491d-8fea-f8a31cc6418a)
 
 Nanosecond resource circulation engine. Zero-commission marketplace for global compute auctions. Powering the liquidity of AI intelligence.
 

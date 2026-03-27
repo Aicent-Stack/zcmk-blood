@@ -2,13 +2,13 @@
 // Domain: ZCMK.com
 // Purpose: Nanosecond resource circulation & 0.00% commission compute auctions.
 // Status: RFC-004 Draft.
-// zcmk-blood/src/circulatory.rs — the value-carrying circulatory system
+// zcmk/src/circulatory.rs — the value-carrying circulatory system
 
 use std::sync::atomic::{AtomicU128, Ordering};
 use crossbeam_queue::ArrayQueue;
-use rttp_nerves::PulseFrameHeader;
-use rpki_immune::Fingerprint;
-use zcmk_blood::TokenMicro;            // picotoken arithmetic
+use rttp::PulseFrameHeader;
+use rpki::Fingerprint;
+use zcmk::TokenMicro;            // picotoken arithmetic
 
 #[repr(align(64))]
 pub struct CirculatoryState {

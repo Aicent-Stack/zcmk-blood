@@ -7,7 +7,15 @@
   <code> 🦀 Language: Rust </code> &nbsp; 
   <code> 🛡️ Status: EVOLVING </code>
 </p> 
-![ZCMK Heart Pulse](./ZCMK.jpg)
+
+# 🩸 ZCMK: The Value-Carrying Circulatory System
+
+<p align="left">
+  <img src="https://raw.githubusercontent.com" width="100%">
+</p>
+
+> **"AI needs blood, not bank taxes."** 🧠⚡️🛡️
+
 Nanosecond resource circulation engine. Zero-commission marketplace for global compute auctions. Powering the liquidity of AI intelligence.
 
 **Live Dissection: ZCMK.com — The Blood**  

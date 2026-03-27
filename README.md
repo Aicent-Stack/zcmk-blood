@@ -1,7 +1,6 @@
 # 🧠 Aicent Stack: The Sovereign AI Nervous System
 
 # zcmk — The Blood of Aicent Stack
-
  ⚪ **AICENT**  💎 **RTTP**  🔴 **RPKI**  🟢 **ZCMK**  🟡 **GTIOT** 
  
 <p align="left">

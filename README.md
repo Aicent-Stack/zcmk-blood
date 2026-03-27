@@ -1,4 +1,15 @@
+# 🧠 Aicent Stack: The Sovereign AI Nervous System
+
 # zcmk — The Blood of Aicent Stack
+
+ ⚪ **AICENT**  💎 **RTTP**  🔴 **RPKI**  🟢 **ZCMK**  🟡 **GTIOT** 
+ 
+<p align="left">
+  <code> 🛠️ Build: Passing </code> &nbsp; 
+  <code> 🦀 Language: Rust </code> &nbsp; 
+  <code> 🛡️ Status: EVOLVING </code>
+</p>
+
 Nanosecond resource circulation engine. Zero-commission marketplace for global compute auctions. Powering the liquidity of AI intelligence.
 
 **Live Dissection: ZCMK.com — The Blood**  

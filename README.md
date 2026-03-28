@@ -1,3 +1,5 @@
+**Aicent Stack • Sovereign AI Nervous System**
+
 # 🩸 ZCMK: The Value-Carrying Circulatory System
 
 ⚪ **AICENT**  💎 **RTTP**  🔴 **RPKI**  🟢 **ZCMK**  🟡 **GTIOT** 

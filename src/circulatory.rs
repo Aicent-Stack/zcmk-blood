@@ -1,8 +1,10 @@
 // Aicent Stack | ZCMK (Zero-Commission Marketplace & Knot)
-// Domain: ZCMK.com
+// Domain: https://zcmk.com
 // Purpose: Nanosecond resource circulation & 0.00% commission compute auctions.
-// Status: RFC-004 Draft.
-// zcmk/src/circulatory.rs — the value-carrying circulatory system
+// Specification: RFC-004 Draft.
+// Licensed under the Apache-2.0 via Aicent.com Organization.
+// zcmk/src/circulatory.rs — the value-carrying blood of Aicent Stack
+//! # RFC-004: ZCMK Compute Market & Value Circulation
 
 use std::sync::atomic::{AtomicU128, Ordering};
 use crossbeam_queue::ArrayQueue;

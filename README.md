@@ -1,13 +1,14 @@
 **Aicent Stack • Sovereign AI Nervous System**
 
 # 🟢 zcmk — The Blood of Aicent Stack
-⚪ **AICENT**  💎 **RTTP**  🔴 **RPKI**  🟢 **ZCMK**  🟡 **GTIOT** 
 
 **Real-Time Bid/Ask (RTBA) Zero-Commission Settlement Protocol [RFC-004]**
 
 [![RFC](https://img.shields.io/badge/RFC-004-green.svg)](https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md)
 [![Status](https://img.shields.io/badge/Status-Homeostasis-brightgreen.svg)](#)
 [![Org](https://img.shields.io/badge/Org-Aicent.com-blue.svg)](http://zcmk.com)
+
+⚪ **AICENT** (Brain) | 💎 **RTTP** (Nerves) | 🔴 **RPKI** (Immunity) | 🟢 **ZCMK** (Blood) | 🟡 **GTIOT** (Body)
 
 ![ZCMK](https://github.com/user-attachments/assets/9135b15b-22da-491d-8fea-f8a31cc6418a)
 

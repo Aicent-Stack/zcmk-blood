@@ -8,7 +8,7 @@
 [![Status](https://img.shields.io/badge/Status-Homeostasis-brightgreen.svg)](#)
 [![Org](https://img.shields.io/badge/Org-Aicent.com-blue.svg)](http://zcmk.com)
 
-⚪ **AICENT** (Brain) | 💎 **RTTP** (Nerves) | 🔴 **RPKI** (Immunity) | 🟢 **ZCMK** (Blood) | 🟡 **GTIOT** (Body)
+⚪ AICENT | 💎 RTTP | 🔴 RPKI | 🟢 ZCMK | 🟡 GTIOT | 🟣 AICENT-NET
 
 ![ZCMK](https://github.com/user-attachments/assets/9135b15b-22da-491d-8fea-f8a31cc6418a)
 

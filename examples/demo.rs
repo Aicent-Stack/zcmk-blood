@@ -1,7 +1,8 @@
 // Aicent Stack | ZCMK (Zero-Commission Marketplace & Knot)
 // Domain: http://zcmk.com
+// Specification: RFC-004 Draft. 
 // Purpose: Unit Demonstration of RTBA Matching & Picotoken Settlement (RFC-004)
-// License: Apache-2.0
+// License: Apache-2.0 via Aicent.com Organization.
 
 use std::time::Instant;
 use rttp::PulseFrameHeader;

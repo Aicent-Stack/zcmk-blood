@@ -33,12 +33,6 @@ tokio = { workspace = true, features = ["sync", "rt"] }
 rand = { workspace = true }          # Chaos-testing the market pressure
 tracing = { workspace = true }       # Financial telemetry for audit trails
 
-[features]
-default = ["std"]
-std = ["serde/std", "anyhow/std", "rttp/std"]
-# [RFC-006] Enable metabolic shunting across the global operational grid
-hive-metabolism = []
-
 [dev-dependencies]
 # Benchmarking finality latency (<1ms targets)
 criterion = { workspace = true }

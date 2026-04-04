@@ -2,36 +2,45 @@
 name = "zcmk"
 description = "ZCMK: Real-Time Bid/Ask (RTBA) Zero-Commission Settlement Protocol [RFC-004]"
 version.workspace = true
-edition.workspace = true
-authors.workspace = true
-license.workspace = true
-repository.workspace = true
+edition = "2024" # Explicitly set edition to 2024 for full compatibility
+authors = ["Aicent Stack Team <lee@aicent.com>"]
+license = "Apache-2.0"
+repository = "https://github.com/Aicent-Stack/zcmk" # Point to its own independent repository
 homepage = "http://zcmk.com"
 documentation = "https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md"
-keywords = ["hft", "micro-settlement", "rfc-004", "compute-market", "economic-homeostasis"]
+keywords = ["hft", "micro-settlement", "rfc-004", "rtba", "economic-homeostasis", "picotoken"]
 categories = ["financial-services", "algorithms", "distributed-computing"]
-rust-version = "1.85"
+rust-version = "1.85" # Explicitly set rust-version to 1.85 for consistency
 
 [dependencies]
-# --- Core Organism Linking (L1 Metabolic Layer) ---
+# --- Core Organism Linking (Unidirectional Dependency Flow) ---
 # ZCMK operates as a pure financial primitive. It consumes neural pulses (RTTP) 
-# to execute atomic clearings. High-level cognitive orchestration (Aicent Brain) 
-# is decoupled to maintain a strict unidirectional dependency graph.
-rttp = { workspace = true }
+# and provides feedback to the Brain (AICENT) for economic homeostasis.
+rttp = { workspace = true, features = ["std"] } # Explicitly enable RTTP's std feature
+aicent = { workspace = true, features = ["std"] } # Explicitly enable AICENT's std feature
 
 # --- HFT-Grade Matching Engine ---
-# [PERF] High-concurrency lock-free queues for nanosecond-speed auctioning
+# [PERF] Lock-free primitives for nanosecond-speed auctioning and settlements.
 crossbeam-queue = { workspace = true }
-parking_lot = { workspace = true }   # [PERF] HFT-grade synchronization primitives
-num-traits = { version = "0.2", default-features = false } # [FINANCE] Precision math for picotoken (10^-12) arithmetic
+parking_lot = { workspace = true }   # HFT-grade synchronization primitives
+num-traits = { workspace = true, default-features = false } # Precision math for picotoken (10^-12) arithmetic
 once_cell = { workspace = true }     # Safe static initialization of the market manifold
 
 # --- Logic & Telemetry ---
 serde = { workspace = true, features = ["derive"] }
 anyhow = { workspace = true }
 tokio = { workspace = true, features = ["sync", "rt"] }
-rand = { workspace = true }          # Chaos-testing the market pressure
+rand = { workspace = true }          # Chaos-testing market pressure for robustness
 tracing = { workspace = true }       # Financial telemetry for audit trails
+
+[features]
+default = ["std"]
+# [Standard v1.0] Standard library support for general-purpose compute.
+# Explicitly re-exporting 'std' for all foundational dependencies.
+std = ["serde/std", "anyhow/std", "rttp/std", "aicent/std"] 
+
+# [RFC-006] Feature flag to enable metabolic shunting across the global operational grid.
+hive-metabolism = []
 
 [dev-dependencies]
 # Benchmarking finality latency (<1ms targets)

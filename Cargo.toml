@@ -1,6 +1,6 @@
 [package]
 name = "zcmk"
-description = "ZCMK: Real-Time Bid/Ask Settlement Protocol [RFC-004]"
+description = "ZCMK: Real-Time Bid/Ask (RTBA) and Zero-Commission Settlement Protocol [RFC-004]"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
@@ -8,12 +8,12 @@ license.workspace = true
 repository.workspace = true
 
 [dependencies]
-# 🛡️ Core fix: Removed aicent dependency
 rttp.workspace = true
 
-# --- Primitives ---
+# --- HFT-Grade Matching Engine ---
 crossbeam-queue.workspace = true
 parking_lot.workspace = true
+once_cell.workspace = true
 serde.workspace = true
 anyhow.workspace = true
 tokio = { workspace = true, features = ["sync", "rt"] }

@@ -10,7 +10,7 @@ homepage = "http://zcmk.com"
 documentation = "https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md"
 keywords = ["hft", "micro-settlement", "rfc-004", "compute-market", "economic-homeostasis"]
 categories = ["financial-services", "algorithms", "distributed-computing"]
-rust-version = "1.75"
+rust-version = "1.85"
 
 [dependencies]
 # --- Core Organism Linking (L1 Metabolic Layer) ---

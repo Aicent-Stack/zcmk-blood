@@ -1,48 +1,54 @@
 [package]
 name = "zcmk"
-description = "ZCMK: Real-Time Bid/Ask (RTBA) Zero-Commission Settlement Protocol [RFC-004]"
+description = "ZCMK: Real-Time Bid/Ask (RTBA) and Zero-Commission Settlement Protocol [RFC-004]"
+# Inheriting core protocol DNA from the root workspace
 version.workspace = true
-edition = "2024" # Explicitly set edition to 2024 for full compatibility
-authors = ["Aicent Stack Team <lee@aicent.com>"]
-license = "Apache-2.0"
-repository = "https://github.com/Aicent-Stack/zcmk" # Points to its own independent repository
-homepage = "http://zcmk.com"
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage = "https://zcmk.com"
 documentation = "https://github.com/Aicent-Stack/manifesto/blob/main/rfcs/RFC-004-ZCMK-BLOOD.md"
-keywords = ["hft", "micro-settlement", "rfc-004", "rtba", "economic-homeostasis", "picotoken", "128-bit-atomic"]
-categories = ["financial-services", "algorithms", "distributed-computing"]
-rust-version.workspace = true # Explicitly inherit rust-version for consistency
+rust-version.workspace = true
+
+# Keywords and categories for AI-native financial authority
+keywords = ["hft", "micro-settlement", "rfc-004", "compute-market", "economic-homeostasis", "picotoken"]
+categories = ["financial-services", "algorithms", "distributed-computing", "network-programming"]
 
 [dependencies]
 # --- Core Organism Linking (Unidirectional Dependency Flow) ---
-# ZCMK operates as a pure financial primitive. It consumes neural pulses (RTTP) 
-# and provides feedback to the Brain (AICENT) for economic homeostasis.
-# Explicitly enable RTTP's and AICENT's std feature for full compatibility.
-rttp = { workspace = true, features = ["std"] } 
-aicent = { workspace = true, features = ["std"] } 
+# ZCMK is the blood of the organism, clearing value atomically with neural pulses.
+# Explicitly enable dependencies' 'std' features for full protocol integration.
+rttp   = { workspace = true, features = ["std"] }
+aicent = { workspace = true, features = ["std"] }
 
-# --- HFT-Grade Matching Engine ---
-# [PERF] Lock-free primitives for nanosecond-speed auctioning and settlements.
-crossbeam-queue = { workspace = true }
-parking_lot = { workspace = true }   # HFT-grade synchronization primitives
-num-traits = { workspace = true, default-features = false, features = ["libm"] } # Precision math for picotoken (10^-12) arithmetic
-once_cell = { workspace = true }     # Safe static initialization of the market manifold
+# --- HFT-Grade Matching Engine (Real-Time Bid/Ask) ---
+# Optimized for nanosecond-speed auctioning and zero-friction shunting.
+crossbeam-queue   = { workspace = true } # Lock-free shunting for the RTBA manifold
+parking_lot       = { workspace = true } # [PERF] Hardware-optimized mutexes
+once_cell         = { workspace = true } # Safe static initialization of the market grid
 
-# --- Logic & Telemetry ---
-serde = { workspace = true, features = ["derive"] }
-anyhow = { workspace = true }
-tokio = { workspace = true, features = ["sync", "rt"] }
-rand = { workspace = true }          # Chaos-testing market pressure for robustness
-tracing = { workspace = true }       # Financial telemetry for audit trails
+# --- Financial Precision & Logic ---
+# [RFC-004] Supporting picotoken granularity (10^-12) for micro-inference pricing.
+num-traits = { workspace = true }
+serde      = { workspace = true, features = ["derive"] }
+anyhow     = { workspace = true }
+tokio      = { workspace = true, features = ["sync", "rt"] } # Core async primitives
+rand       = { workspace = true }        # For market pressure chaos-testing
+tracing    = { workspace = true }        # Audit-grade financial telemetry logs
 
 [features]
+# Standard implementation: Optimized for high-throughput clearing environments.
 default = ["std"]
-# [Standard v1.0] Standard library support for general-purpose compute.
-# Explicitly re-exporting 'std' for internal Aicent Stack dependencies to avoid cyclic feature conflicts.
-std = ["rttp/std", "aicent/std"]
 
-# [RFC-006] Feature flag to enable metabolic shunting across the global operational grid.
+# [Standard v1.0] Standard library support for general-purpose compute.
+# Re-exports 'std' for internal Aicent Stack dependencies to avoid feature conflicts.
+std = ["serde/std", "anyhow/std", "rttp/std", "aicent/std"]
+
+# [RFC-006] Hive Metabolic Shunting Integration.
+# Enables collective redistribution of compute credits across the Aicent.net grid.
 hive-metabolism = []
 
 [dev-dependencies]
-# Benchmarking finality latency (<1ms targets)
-criterion = { workspace = true }
+# Benchmarking finality latency targets (<1ms end-to-end clearing).
+criterion = { workspace = true, features = ["async_tokio"] }

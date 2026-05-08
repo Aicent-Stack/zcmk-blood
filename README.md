@@ -31,6 +31,8 @@ The v1.2.3-Alpha release has shattered the overhead of traditional financial cle
 | **Numeric Standard** | 64-bit Soft | ✅ **128-bit Hard Absolute** |
 | **Planetary Sync Jitter** | 12 ns | ✅ **12 ns** (Locked Baseline) |
 
+<img width="3038" height="1736" alt="2026-05-08_171834_554" src="https://github.com/user-attachments/assets/07731017-2d20-4202-99d4-2c425112655f" />
+
 ---
 
 ## 🧬 3. Core Mechanism: Value Metabolism

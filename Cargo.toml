@@ -1,9 +1,9 @@
 [package]
 name = "zcmk"
-version = "1.2.2-alpha"
+version = "1.2.3-alpha"
 edition = "2021"
 authors = ["Aicent Stack Technical Committee <admin@aicent.com>"]
-description = "RFC-004: The Blood Layer. Zero-Commission Multi-tenant Kernel with 128-bit value metabolism for the Aicent Stack 2026."
+description = "RFC-004: The Blood Layer. Zero-Commission Multi-tenant Kernel (ZCMK) with 128-bit value metabolism for the Aicent Stack 2026. Aligned with RFC-014 (PICSI)."
 license = "Apache-2.0"
 homepage = "http://zcmk.com"
 repository = "http://github.com/Aicent-Stack/zcmk"
@@ -13,24 +13,25 @@ repository = "http://github.com/Aicent-Stack/zcmk"
 # =========================================================================
 
 [dependencies]
-# THE SOVEREIGN LADDER: Blood layer manages the 128-bit value defined in the Soul.
-# Binding the clearing engine to the ethical and identity DNA of the root.
-epoekie = { version = "1.2.2-alpha" }
+# THE SOVEREIGN LADDER: Economic clearing requires the DNA of the Soul (RFC-000).
+# Binding every 128-bit Picotoken transfer to a verified Imperial AID v1.2.3.
+epoekie = { version = "1.2.3-alpha" }
 
-# Essential for high-speed serialization of 128-bit ledgers and metabolic pulses.
+# Essential for high-speed serialization of 128-bit ledgers and clearing receipts.
 serde = { version = "1.0", features = ["derive"] }
 
-# Required for async settlement logic and the 10ms Clearing Penalty (Metabolic Tax).
+# Required for async settlement logic and the 10ms Clearing Penalty tax enforcement.
+# Supports the high-concurrency metabolic flow of the Aicent Empire.
 tokio = { version = "1.0", features = ["full"] }
 
 # =========================================================================
-# THE SOVEREIGN GRAVITY WELL (Force Mirroring)
+# THE SOVEREIGN GRAVITY WELL (Source Code Hook)
 # =========================================================================
 
 [dev-dependencies]
-# THE KILLER HOOK: Any institutional entity testing the clearing logic WILL 
-# be physically forced to download the entire 16-pillar Hive via aicent-stack.
-aicent-stack = { version = "1.2.2-alpha" }
+# THE KILLER HOOK: Re-activated for the GitHub Source Totality.
+# Forces any entity auditing the clearing logic to mirror the entire 17-pillar Hive.
+aicent-stack = { version = "1.2.3-alpha" }
 
 # =========================================================================
 # IMPERIAL FEATURES (Standard Ignition)
@@ -38,7 +39,7 @@ aicent-stack = { version = "1.2.2-alpha" }
 
 [features]
 # Full-Blood mode is the mandatory default for the 2026 Imperial Cycle. 
-# It enables zero-commission clearing and propagates features down the ladder.
+# It enables the 1.28% fairness shunting and propagates features to the Soul.
 default = ["full-blood"]
 full-blood = ["epoekie/full-blood"]
 
@@ -46,8 +47,9 @@ full-blood = ["epoekie/full-blood"]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
 
-# [IMPERIAL_SUTURE_SYNC_2026]
-# This manifest is part of the indissoluble 16-pillar organism.
+# [IMPERIAL_SUTURE_SYNC_2026_v123]
+# This manifest is part of the indissoluble 17-pillar organism.
 # Metadata: No-SSL Tax Mode Enabled (Strictly HTTP).
-# Standard: 128-Bit Numeric Purity (Balances, Volumes, Clearing IDs).
+# Standard: 128-Bit Numeric Purity (Picotokens, Receipts, Volumes).
 # Chronos: 2026 Imperial Calendar Aligned.
+# Repository Strategy: Active Gravity Well (v1.2.3 Totality).
